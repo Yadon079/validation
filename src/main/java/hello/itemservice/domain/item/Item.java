@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 //@ScriptAssert(lang = "javascript", script = "_this.price * _this.quantity >= 10000")
 public class Item {
 
-    @NotNull(groups = UpdateCheck.class)    // 수정 요구사항 추가
+/*    @NotNull(groups = UpdateCheck.class)    // 수정 요구사항 추가
     private Long id;
 
     @NotBlank(groups = {SaveCheck.class, UpdateCheck.class})
@@ -33,5 +33,11 @@ public class Item {
         this.itemName = itemName;
         this.price = price;
         this.quantity = quantity;
-    }
+    }*/
+
+    // 검증 코드 제거
+    private Long id;
+    private String itemName;
+    private Integer price;
+    private Integer quantity;
 }
